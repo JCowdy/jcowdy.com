@@ -52,8 +52,6 @@ module.exports = {
     new CopyPlugin({
       patterns: [{
         from: 'static/css', to: 'css'
-      }, {
-        from: 'static/images', to: 'images'
       }]
     }),
     new HtmlWebpackPlugin ({
