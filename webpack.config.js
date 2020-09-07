@@ -23,10 +23,10 @@ module.exports = {
   },
   resolve: { extensions: ['*', '.js', '.jsx'] },
   output: {
-    path: path.resolve(__dirname, 'dist/'),
+    path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
-    filename: '[name].js',
-    chunkFilename: '[name].js'
+    filename: 'js/[name].[contenthash].js',
+    chunkFilename: 'js/[name].[contenthash].js'
   },
   optimization: {
     minimize: true,
