@@ -1,16 +1,11 @@
 import React from 'react'
+import Link from './components/Link'
 
 const Links = () => (
   <div>
-    <a href="https://www.linkedin.com/in/jasoncowdy/">
-      <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="https://github.com/jcowdy" >
-      <i class="fab fa-github"></i>
-    </a>
-    <a href="https://twitter.com/jasoncowdy">
-      <i class="fab fa-twitter"></i>
-    </a>
+    <Link href='https://www.linkedin.com/in/jasoncowdy' icon='linkedin' />
+    <Link href='https://github.com/jcowdy' icon='github' />
+    <Link href='https://twitter.com/jasoncowdy' icon='twitter' />
   </div>
 )
 
