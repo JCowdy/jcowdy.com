@@ -14,8 +14,9 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    env:
+      NODE_ENV: production
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -30,3 +31,9 @@ jobs:
 
       - name: build
         run: npm run build
+      
+      - name: artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: dist
+          path: dist/
