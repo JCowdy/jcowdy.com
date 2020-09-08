@@ -3,7 +3,7 @@ import Links from './Links'
 import Title from './Title'
 
 const App = () => (
-  <div id="hero" class="center">
+  <div id='hero' className='center'>
     <Title />
     <Links />
   </div>
