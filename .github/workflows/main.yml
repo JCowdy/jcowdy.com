@@ -38,11 +38,11 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     needs: [build]
+    if: github.ref == 'refs/heads/develop'
 
     steps:
       - name: artifacts
         uses: actions/download-artifact@v2
-        if: github.ref == 'refs/heads/develop'
         with:
           name: dist
           path: dist/
