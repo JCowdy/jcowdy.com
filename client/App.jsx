@@ -1,12 +1,14 @@
 import React from 'react'
-import Links from './Links'
-import Title from './Title'
+import { Home, NotFound } from './pages'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 const App = () => (
-  <div id='hero' className='center'>
-    <Title />
-    <Links />
-  </div>
+  <BrowserRouter>
+    <Switch>
+      <Route exact path='/' component={Home} />
+      <Route component={NotFound} />
+    </Switch>
+  </BrowserRouter>
 )
 
 export default App
