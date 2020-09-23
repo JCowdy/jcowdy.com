@@ -1,6 +1,7 @@
 ## About
 The code behind https://jcowdy.com
 
+
 ## Continuous Integration
 ![CI](https://github.com/JCowdy/jcowdy.com/workflows/CI/badge.svg)
 <br />
@@ -26,3 +27,6 @@ npm run start
 npm run build
 ```
 Runs a production build and outputs the results to the dist folder.
+
+## Renovate / Updates
+Renvoate keeps this repo up to date with the latest and greatest package versions automagically. The [renovate config](renovate.json) is set to auto-merge any minor or patch versions as long as building and tests pass. You can see the renovate bot's logs here: https://app.renovatebot.com/dashboard#github/JCowdy/jcowdy.com
