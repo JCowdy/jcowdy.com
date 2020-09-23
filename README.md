@@ -1,12 +1,6 @@
 ## About
 The code behind https://jcowdy.com
 
-
-## Continuous Integration
-![CI](https://github.com/JCowdy/jcowdy.com/workflows/CI/badge.svg)
-<br />
-This repo uses github actions to automatically build and sync the output to s3. You can check out the [workflow here](https://github.com/JCowdy/jcowdy.com/blob/master/.github/workflows/main.yml).
-
 ## Development
 ### Prereqs
 [NodeJS Version v14+](https://nodejs.org/en/download/current/)
