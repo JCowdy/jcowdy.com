@@ -30,6 +30,7 @@ jobs:
           NODE_ENV: production
       
       - name: artifacts
+        if: github.ref == 'refs/heads/master'
         uses: actions/upload-artifact@v2
         with:
           name: dist
