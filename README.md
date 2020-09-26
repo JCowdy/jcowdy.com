@@ -17,10 +17,16 @@ npm run start
 ```
 
 ### Build
+Runs a production build and outputs the results to the dist folder.
 ```
 npm run build
 ```
-Runs a production build and outputs the results to the dist folder.
+
+### Test
+Runs Jest/Enzyme tests and outputs coverage to the coverage directory in the root folder.
+```
+npm test
+```
 
 ### Deploy
 Deployment is done automatically using Github's actions in a [multi-step pipeline](.github/workflows/main.yml). Code is built, cached as a build artifact, and finally deployed via s3 sync. Only the master branch is configured to deploy automatically.
