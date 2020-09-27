@@ -1,5 +1,6 @@
 ## About
-The code behind https://jcowdy.com
+The code behind https://jcowdy.com \
+Isn't this kind of overkill? Absolutely, but it's as fun way to play with new shiny new tech and keep up to date!
 
 ## Development
 ### Prereqs
