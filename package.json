@@ -27,7 +27,7 @@
     "enzyme-adapter-react-16": "1.15.5",
     "html-webpack-plugin": "4.5.0",
     "jest": "26.6.3",
-    "webpack": "4.44.2",
+    "webpack": "5.10.0",
     "webpack-cli": "3.3.12",
     "webpack-dev-server": "3.11.0"
   },
