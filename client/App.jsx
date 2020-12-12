@@ -1,15 +1,21 @@
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import ErrorBoundary from './components/ErrorBoundary'
-import { Home, NotFound } from './pages'
+import Loading from './components/Loading'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
+
+import Home from './pages/home/Home'
+// Lazy import other pages
+const NotFound = lazy(() => import('./pages/errors/NotFound'))
 
 const App = () => (
   <ErrorBoundary>
     <BrowserRouter>
-      <Switch>
-        <Route exact path='/' component={Home} />
-        <Route component={NotFound} />
-      </Switch>
+      <Suspense fallback={<Loading />}>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route component={NotFound} />
+        </Switch>
+      </Suspense>
     </BrowserRouter>
   </ErrorBoundary>
 )

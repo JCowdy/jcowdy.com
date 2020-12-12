@@ -33,7 +33,7 @@
   },
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server",
+    "start": "webpack serve",
     "test": "jest"
   },
   "author": "Jason Cowdy",
