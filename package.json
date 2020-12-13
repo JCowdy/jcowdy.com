@@ -27,6 +27,8 @@
     "enzyme-adapter-react-16": "1.15.5",
     "html-webpack-plugin": "4.5.0",
     "jest": "26.6.3",
+    "jest-puppeteer": "^4.4.0",
+    "puppeteer": "^5.5.0",
     "webpack": "4.44.2",
     "webpack-cli": "4.2.0",
     "webpack-dev-server": "3.11.0"
@@ -39,6 +41,7 @@
   "author": "Jason Cowdy",
   "license": "UNLICENSED",
   "jest": {
+    "preset": "jest-puppeteer",
     "transform": {
       "^.+\\.[t|j]sx?$": "babel-jest"
     },
