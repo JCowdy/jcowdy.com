@@ -1,4 +1,3 @@
-import React from 'react'
 import { shallow } from 'enzyme'
 import Links from './Links'
 import Link from '../../components/Link'

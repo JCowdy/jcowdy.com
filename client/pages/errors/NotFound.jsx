@@ -1,5 +1,3 @@
-import React from 'react'
-
 const NotFound = () => (
   <div class='center'>
     <h1>404 - Not Found</h1>
