@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react'
+import { Suspense, lazy } from 'react';
 import ErrorBoundary from './components/ErrorBoundary'
 import Loading from './components/Loading'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'

@@ -1,4 +1,3 @@
-import React from 'react'
 import Links from './Links'
 import Title from './Title'
 
