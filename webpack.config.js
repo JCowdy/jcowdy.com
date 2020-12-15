@@ -2,6 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 const CopyPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   entry: {
@@ -17,11 +18,24 @@ module.exports = {
         presets: ['@babel/preset-react']
       }
     }, {
-      test: /\.css$/,
-      use: ['style-loader', 'css-loader']
+      test: /\.(css|scss)$/,
+      use: [
+        "style-loader",
+        MiniCssExtractPlugin.loader,
+        "css-loader" ,
+        {
+          loader: "postcss-loader",
+          options: {
+            postcssOptions: {
+              plugins: [ "postcss-preset-env" ],
+            },
+          },
+        },
+        "sass-loader"
+      ]
     }]
   },
-  resolve: { extensions: ['*', '.js', '.jsx'] },
+  resolve: { extensions: ['*', '.js', '.jsx', '.scss', '.css'] },
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
@@ -56,6 +70,10 @@ module.exports = {
     }),
     new HtmlWebpackPlugin ({
       template: 'static/index.html'
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'css/[name].css',
+      chunkFilename: 'css/[id].css'
     })
   ],
   devServer: {
