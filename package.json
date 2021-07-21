@@ -37,7 +37,7 @@
     "sass": "1.35.2",
     "sass-loader": "10.2.0",
     "style-loader": "2.0.0",
-    "webpack": "4.46.0",
+    "webpack": "^5.45.1",
     "webpack-cli": "4.7.2",
     "webpack-dev-server": "3.11.2"
   },
@@ -65,9 +65,12 @@
   },
   "babel": {
     "presets": [
-      ["@babel/preset-react", {
-        "runtime": "automatic"
-      }],
+      [
+        "@babel/preset-react",
+        {
+          "runtime": "automatic"
+        }
+      ],
       "@babel/preset-env"
     ]
   }
