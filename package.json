@@ -34,7 +34,7 @@
     "postcss-loader": "6.2.1",
     "postcss-preset-env": "6.7.0",
     "puppeteer": "10.4.0",
-    "sass": "1.43.5",
+    "sass": "1.44.0",
     "sass-loader": "12.3.0",
     "style-loader": "3.3.1",
     "webpack": "5.64.4",
