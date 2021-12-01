@@ -28,7 +28,7 @@
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.6",
     "html-webpack-plugin": "5.5.0",
-    "jest": "27.4.2",
+    "jest": "27.4.3",
     "mini-css-extract-plugin": "2.4.5",
     "postcss": "8.4.4",
     "postcss-loader": "6.2.1",
