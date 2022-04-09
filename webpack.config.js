@@ -79,9 +79,14 @@ module.exports = {
     })
   ],
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    writeToDisk:true,
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
     historyApiFallback: true,
-    port: 8080
+    compress: true,
+    port: 8080,
+    devMiddleware: {
+      writeToDisk:true
+    }
   }
 }
