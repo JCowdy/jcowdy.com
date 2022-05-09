@@ -25,6 +25,7 @@ npm run build
 
 ### Test
 Runs Jest/Enzyme tests and outputs coverage to the coverage directory in the root folder.
+
 ```
 npm test
 ```
