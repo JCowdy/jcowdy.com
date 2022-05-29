@@ -16,9 +16,9 @@
   },
   "devDependencies": {
     "@babel/cli": "7.17.10",
-    "@babel/core": "7.17.10",
-    "@babel/preset-env": "7.17.10",
-    "@babel/preset-react": "7.16.7",
+    "@babel/core": "7.18.2",
+    "@babel/preset-env": "7.18.2",
+    "@babel/preset-react": "7.17.12",
     "@wojtekmaj/enzyme-adapter-react-17": "0.6.7",
     "autoprefixer": "10.4.7",
     "babel-jest": "28.1.0",
