@@ -10,7 +10,7 @@ describe('App', () => {
   })
 
   it('Renders / Smoke test', () => {
-    expect(cmp).not.toThrow()
+    expect(cmp.find('[data-test-id="error-boundary"]')).toHaveLength(0)
     expect(cmp).not.toBeUndefined()
   })
 })
