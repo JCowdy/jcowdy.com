@@ -19,6 +19,8 @@
     "@babel/core": "7.17.10",
     "@babel/preset-env": "7.17.10",
     "@babel/preset-react": "7.16.7",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^12.1.4",
     "autoprefixer": "10.4.7",
     "babel-jest": "28.1.0",
     "babel-loader": "8.2.5",
@@ -27,6 +29,7 @@
     "css-loader": "6.7.1",
     "html-webpack-plugin": "5.5.0",
     "jest": "28.1.0",
+    "jest-environment-jsdom": "^28.1.1",
     "mini-css-extract-plugin": "2.6.0",
     "postcss": "8.4.13",
     "postcss-loader": "6.2.1",
@@ -35,7 +38,7 @@
     "sass-loader": "12.6.0",
     "style-loader": "3.3.1",
     "webpack": "5.72.1",
-    "webpack-cli": "4.9.2",
+    "webpack-cli": "^4.10.0",
     "webpack-dev-server": "4.9.0"
   },
   "scripts": {
@@ -46,6 +49,10 @@
   "author": "Jason Cowdy",
   "license": "UNLICENSED",
   "jest": {
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest-setup"
+    ],
     "transform": {
       "^.+\\.[t|j]sx?$": "babel-jest"
     },
