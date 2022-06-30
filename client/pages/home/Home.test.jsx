@@ -1,25 +1,39 @@
-import { shallow } from 'enzyme'
-import Home from './Home'
-import Title from './Title'
-import Links from './Links'
+import {render, fireEvent, waitFor, screen} from '@testing-library/react'
+import Home from "./Home";
 
-describe('Links', () => {
+describe('Home Page', () => {
 
-  let cmp
+    it('has the hello world header', () => {
+        render(<Home />)
 
-  beforeAll(() => {
-    cmp = shallow(<Home />)
-  })
+        expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Hello World')
+    })
 
-  it('Renders', () => {
-    expect(cmp).not.toBeUndefined()
-  })
+    it('has a link to Github', () => {
+        render(<Home />)
 
-  it('Contains the Title component', () => {
-    expect(cmp.find(Title)).toHaveLength(1)
-  })
+        const link = screen.getByRole('link', { name: 'Github Profile' })
+        const icon = screen.getByRole('img', { name: 'Github Profile' })
 
-  it('Contains the Links component', () => {
-    expect(cmp.find(Links)).toHaveLength(1)
-  })
+        expect(link).toContainElement(icon)
+    })
+
+    it('has a link to Linkedin', () => {
+        render(<Home />)
+
+        const link = screen.getByRole('link', { name: 'Linkedin Profile' })
+        const icon = screen.getByRole('img', { name: 'Linkedin Profile' })
+
+        expect(link).toContainElement(icon)
+    })
+
+    it('has a link to Twitter', () => {
+        render(<Home />)
+
+        const link = screen.getByRole('link', { name: 'Twitter Profile' })
+        const icon = screen.getByRole('img', { name: 'Twitter Profile' })
+
+        expect(link).toContainElement(icon)
+    })
+
 })
