@@ -15,9 +15,9 @@
     "react-router-dom": "^6.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.22.6",
-    "@babel/core": "7.22.8",
-    "@babel/preset-env": "7.22.7",
+    "@babel/cli": "7.22.9",
+    "@babel/core": "7.22.9",
+    "@babel/preset-env": "7.22.9",
     "@babel/preset-react": "7.22.5",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "12.1.5",
