@@ -4,7 +4,7 @@ Isn't this kind of overkill? Absolutely, but it's as fun way to play with new sh
 
 ## Development
 ### Prereqs
-[NodeJS Version v14+](https://nodejs.org/en/download/current/)
+[NodeJS Version v22+](https://nodejs.org/en/download/current/)
 
 ### Install
 ```
