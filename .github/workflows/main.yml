@@ -33,7 +33,7 @@ jobs:
         run: npm test
 
       - name: artifacts
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: dist
           path: dist/
@@ -47,7 +47,7 @@ jobs:
 
     steps:
       - name: artifacts
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v8
         with:
           name: dist
           path: dist/
